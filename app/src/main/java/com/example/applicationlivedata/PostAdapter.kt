@@ -1,6 +1,5 @@
 package com.example.applicationlivedata
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,7 +7,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.applicationlivedata.data.modules.PostModel
 
-class PostAdapter(private val context: Context, private var postList: ArrayList<PostModel>) :
+class PostAdapter(private var postList: ArrayList<PostModel>) :
     RecyclerView.Adapter<PostAdapter.PostViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PostViewHolder {

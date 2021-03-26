@@ -16,7 +16,6 @@
             android:id="@+id/body"
             android:layout_width="match_parent"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:text="body"
             android:layout_height="wrap_content"/>
 
     </LinearLayout>

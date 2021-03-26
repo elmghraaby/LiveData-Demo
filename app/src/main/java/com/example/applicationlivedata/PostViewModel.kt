@@ -17,8 +17,8 @@ class PostViewModel(private val postRepository: PostRepository) : ViewModel() {
     fun getPost() {
         viewModelScope.launch {
             postRepository.getPost()
-                .catch { e ->
-                    Log.d("main", "getPost: ${e.message}")
+                .catch {
+
                 }
                 .collect { postData1 ->
                     postData.value = postData1

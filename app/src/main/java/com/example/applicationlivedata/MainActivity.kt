@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun initUi() {
         recyclerView = findViewById(R.id.recyclerView)
-        postAdapter = PostAdapter(this, ArrayList())
+        postAdapter = PostAdapter(ArrayList())
         recyclerView.apply {
             setHasFixedSize(true)
             layoutManager = LinearLayoutManager(this@MainActivity)
